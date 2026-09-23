@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>디와이큐 (DYQ) — Design Your Quality</title>
+<meta name="description" content="디와이큐(Design Your Quality)는 일상을 더 편하게 만드는 모바일 앱을 개발하는 소프트웨어 스튜디오입니다. MEDI-NAVI, 대연각을 만들었습니다.">
+<style>
+  :root{
+    --bg:#0f1720; --bg2:#131e29; --card:#18242f; --line:#26333f;
+    --teal:#2fb7a6; --teal2:#7fe3d5; --gold:#d9b25a;
+    --txt:#eaf1f4; --muted:#9fb0bb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+  header{padding:64px 0 40px;text-align:center;background:radial-gradient(1200px 400px at 50% -10%,rgba(47,183,166,.18),transparent)}
+  .logo{display:inline-flex;align-items:center;gap:12px;margin-bottom:22px}
+  .logo .mark{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--teal),var(--teal2));display:grid;place-items:center;font-weight:800;color:#06131a;font-size:20px}
+  .logo b{font-size:20px;letter-spacing:.5px}
+  h1{font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:-.5px;margin-bottom:14px}
+  h1 span{color:var(--teal2)}
+  .lead{color:var(--muted);font-size:clamp(15px,2.6vw,18px);max-width:620px;margin:0 auto}
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  h2{font-size:22px;margin-bottom:18px;color:#fff}
+  h2 .bar{display:inline-block;width:26px;height:3px;background:var(--gold);border-radius:2px;vertical-align:middle;margin-right:10px}
+  p.body{color:var(--muted);margin-bottom:14px}
+  .apps{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:640px){.apps{grid-template-columns:1fr 1fr}}
+  .app{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .app h3{font-size:17px;margin-bottom:6px;display:flex;align-items:center;gap:9px}
+  .dot{width:10px;height:10px;border-radius:50%}
+  .app p{color:var(--muted);font-size:14px}
+  .info{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .info dl{display:grid;grid-template-columns:120px 1fr;gap:10px 14px;font-size:14.5px}
+  .info dt{color:var(--muted)}
+  .info dd{color:var(--txt)}
+  a.mail{color:var(--teal2);text-decoration:none;border-bottom:1px solid rgba(127,227,213,.35)}
+  footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  @media(max-width:480px){.info dl{grid-template-columns:92px 1fr}}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="logo"><span class="mark">DYQ</span><b>디와이큐</b></div>
+      <h1>일상을 더 편하게, <span>Design Your Quality</span></h1>
+      <p class="lead">디와이큐는 매일의 생활을 조금 더 쉽고 안심되게 만드는 모바일 앱을 만드는 소프트웨어 스튜디오입니다.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="bar"></span>우리가 만드는 것</h2>
+      <p class="body">복잡한 것을 단순하게, 어려운 정보를 쉬운 말로. 사용자가 진짜 필요할 때 곁에서 도와주는 앱을 지향합니다.</p>
+      <div class="apps">
+        <div class="app">
+          <h3><span class="dot" style="background:#2fb7a6"></span>MEDI-NAVI</h3>
+          <p>복약 알림, 내 주변 병원·약국 찾기, 검사수치 쉬운 풀이까지 — 매일 건강을 곁에서 챙겨주는 참고용 건강 도우미.</p>
+        </div>
+        <div class="app">
+          <h3><span class="dot" style="background:#d9b25a"></span>대연각</h3>
+          <p>믿을 수 있는 한식 다이닝을 큐레이션하는 프리미엄 미식 안내 서비스.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="bar"></span>회사 정보</h2>
+      <div class="info">
+        <dl>
+          <dt>상호</dt><dd>디와이큐 (Design Your Quality)</dd>
+          <dt>대표</dt><dd>원대연</dd>
+          <dt>사업자등록번호</dt><dd>734-15-02973</dd>
+          <dt>사업장 소재지</dt><dd>경기도 화성시 동탄순환대로20길 31</dd>
+          <dt>업종</dt><dd>응용 소프트웨어 개발 및 공급업</dd>
+          <dt>문의</dt><dd><a class="mail" href="mailto:greatlake1004@gmail.com">greatlake1004@gmail.com</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© 2026 디와이큐 (Design Your Quality). All rights reserved.</div>
+  </footer>
+</body>
+</html>
